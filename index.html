@@ -1,17 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sean St Cyr</title>
+  <meta name="description" content="Real estate services across Canada, the US, and Belize." />
   <style>
-    body { font-family: Arial, sans-serif; margin: 40px; }
-    h1 { color: #2a3f54; }
-    p { font-size: 18px; }
+    :root { --max: 960px; --pad: 20px; }
+    body { margin:0; font-family: Arial, sans-serif; line-height:1.6; color:#111; }
+    header { border-bottom:1px solid #e5e5e5; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 18px var(--pad); }
+    nav a { margin-right: 14px; text-decoration:none; color:#1f3a5f; font-weight:600; }
+    nav a:hover { text-decoration:underline; }
+    .hero { padding: 44px var(--pad); }
+    .hero h1 { margin: 0 0 10px; color:#1f3a5f; font-size: 40px; line-height:1.15; }
+    .hero p { margin: 0 0 18px; font-size: 18px; max-width: 70ch; }
+    .btn { display:inline-block; padding: 10px 14px; border:1px solid #1f3a5f; border-radius:8px; text-decoration:none; color:#1f3a5f; font-weight:700; }
+    .btn:hover { background:#1f3a5f; color:#fff; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); padding: 0 var(--pad) 40px; }
+    .card { border:1px solid #e5e5e5; border-radius:12px; padding:16px; }
+    footer { border-top:1px solid #e5e5e5; color:#666; font-size:14px; }
+    .muted { color:#555; }
   </style>
 </head>
 <body>
-  <h1>Welcome to Sean St Cyr</h1>
-  <p>Professional real estate services across Canada, the US, and Belize.</p>
-  <p>Contact: <a href="mailto:seanmstcyr@gmail.com">seanmstcyr@gmail.com</a></p>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <h1>Sean St Cyr</h1>
+      <p class="muted">Real estate services across Canada, the United States, and Belize.</p>
+      <p>Helping buyers, sellers, and investors make confident decisions with clear guidance and straightforward communication.</p>
+      <a class="btn" href="/contact.html">Contact</a>
+    </section>
+
+    <section class="grid wrap">
+      <div class="card">
+        <h3>Buying</h3>
+        <p>Property search support, strategy, and offer guidance from start to close.</p>
+      </div>
+      <div class="card">
+        <h3>Selling</h3>
+        <p>Pricing, positioning, and marketing to attract the right buyer and maximize value.</p>
+      </div>
+      <div class="card">
+        <h3>Investing</h3>
+        <p>Deal evaluation, due diligence checklists, and a plan aligned with your goals.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="y"></span> Sean St Cyr • <a href="mailto:seanmstcyr@gmail.com">seanmstcyr@gmail.com</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

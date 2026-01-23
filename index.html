@@ -158,6 +158,8 @@
       padding:28px 0;
       color:var(--muted);
       font-size: 14px;
+      border-top:1px solid var(--line);
+      background: #fff;
     }
     .footgrid{
       display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px;
@@ -188,6 +190,7 @@
     }
   </style>
 </head>
+
 <body>
 
 <header>
@@ -202,7 +205,7 @@
       </div>
 
       <nav>
-        <a href="/">Home</a>
+        <a href="/index.html">Home</a>
         <a href="/about.html">About</a>
         <a href="/contact.html">Contact</a>
       </nav>
@@ -220,7 +223,7 @@
     <div class="wrap">
       <div class="hero-grid">
         <div>
-          <h1>International Real Estate Consulting, Acquisition Support & Development</h1>
+          <h1>International Real Estate Consulting, Acquisition Support &amp; Development</h1>
           <p class="lead">
             We help investors evaluate opportunities, structure deals, and execute disciplined real estate strategies
             across international markets—built on clear underwriting, risk awareness, and long-term value creation.
@@ -244,7 +247,7 @@
             </div>
             <div class="box">
               <strong>Cross-border focus</strong>
-              <span>Practical guidance across markets & jurisdictions</span>
+              <span>Practical guidance across markets &amp; jurisdictions</span>
             </div>
             <div class="box">
               <strong>Operator mindset</strong>
@@ -262,4 +265,93 @@
           </p>
           <div style="margin-top:14px;" class="divider"></div>
           <p style="margin-top:14px;">
-            <strong>Email:</strong> <a href="mailto:se
+            <strong>Email:</strong> <a href="mailto:seanmstcyr@gmail.com">seanmstcyr@gmail.com</a><br/>
+            <strong>Phone:</strong> <a href="tel:+19059757326">+1 (905) 975-7326</a>
+          </p>
+        </aside>
+      </div>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Investor Advisory</h3>
+          <p>Market insight, deal evaluation, underwriting support, and risk review for cross-border opportunities.</p>
+        </div>
+        <div class="card">
+          <h3>Acquisition &amp; Representation</h3>
+          <p>Professional representation for buyers and investors to negotiate and close confidently.</p>
+        </div>
+        <div class="card">
+          <h3>Development Execution</h3>
+          <p>From land to plans to delivery—supporting development decisions with a long-term value lens.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>How we help investors</h2>
+      <p>
+        Our goal is to make real estate decisions simpler and more disciplined—especially when the market, jurisdiction,
+        or transaction structure introduces complexity.
+      </p>
+
+      <div class="two-col" style="margin-top:16px;">
+        <div class="card">
+          <h3>Focus areas</h3>
+          <ul class="clean">
+            <li>Deal screening and comparable review</li>
+            <li>Cashflow and sensitivity checks</li>
+            <li>Risk analysis (market, legal, operational)</li>
+            <li>Structuring and next-step planning</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>What you get</h3>
+          <ul class="clean">
+            <li>Clear summary of the opportunity and assumptions</li>
+            <li>Key risks and mitigations to consider</li>
+            <li>Recommended strategy and timeline</li>
+            <li>Action list to move forward efficiently</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="section">
+    <div class="wrap">
+      <h2>Ready to talk?</h2>
+      <p>Send a short note with what you’re evaluating and the market you’re looking at. We’ll reply quickly.</p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+        <a class="btn primary" href="/contact.html">Contact</a>
+        <a class="btn ghost" href="mailto:seanmstcyr@gmail.com">Email directly</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footgrid">
+      <div>© <span id="year"></span> Paramount Capital Holdings</div>
+      <div class="muted">
+        <a href="/about.html">About</a> ·
+        <a href="/contact.html">Contact</a> ·
+        <a href="/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="muted" style="margin-top:10px;">
+      Disclaimer: Information on this website is for general informational purposes and does not constitute legal, tax, or financial advice.
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
